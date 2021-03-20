@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/buster64"
-  config.vm.synced_folder "./src", "/home/vagrant/src"
+  config.vm.synced_folder ".", "/home/vagrant/src"
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "1024"
   end
